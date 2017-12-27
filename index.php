@@ -7,7 +7,7 @@ $pass = '';
 $db = 'timesince';
 $db = new mysqli('localhost',$user, $pass, $db) or die("Unable to connect to DB");
 
-if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00'")){
+if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00' limit 12")){
 	$rows = array();
 	if($result->num_rows){
 		while ($row = $result->fetch_assoc())
@@ -101,7 +101,7 @@ if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00'"))
 						  <i class="fa fa-search-plus fa-3x"></i>
 						</div>
 					  </div>
-					  <img class="img-fluid" src="img/portfolio/cabin.png" alt=""><center><?php echo $row['Description']; ?></center>
+					  <img class="img-fluid" src="<?php echo $row['Image'] ?>" alt=""><center><?php echo $row['Description']; ?></center>
 					</a>
 				</div>
 		<?php } 
