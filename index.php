@@ -8,9 +8,13 @@ $db = 'timesince';
 $db = new mysqli('localhost',$user, $pass, $db) or die("Unable to connect to DB");
 
 if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00'")){
-	$rows = null;
+	$rows = array();
 	if($result->num_rows){
-		$rows = $result->fetch_all(MYSQLI_ASSOC);
+		while ($row = $result->fetch_assoc())
+		{
+			//load all returned rows into an array
+			$rows[] = $row;
+		}
 	}
 }else{
 	die($db->error);
