@@ -40,26 +40,26 @@ if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00' or
     <meta name="author" content="">
 
 		<!-- ****** faviconit.com favicons ****** -->
-		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="shortcut icon" href="img/favicon/favicon.ico">
 		<link rel="icon" sizes="16x16 32x32 64x64" href="img/favicon/favicon.ico">
-		<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
-		<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
-		<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-		<link rel="apple-touch-icon" href="/favicon-57.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+		<link rel="icon" type="image/png" sizes="196x196" href="img/favicon/favicon-192.png">
+		<link rel="icon" type="image/png" sizes="160x160" href="img/favicon/favicon-160.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96.png">
+		<link rel="icon" type="image/png" sizes="64x64" href="img/favicon/favicon-64.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16.png">
+		<link rel="apple-touch-icon" href="img/favicon/favicon-57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/favicon-114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/favicon-72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/favicon-144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/favicon-60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/favicon-120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/favicon-76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/favicon-152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon-180.png">
 		<meta name="msapplication-TileColor" content="#FFFFFF">
-		<meta name="msapplication-TileImage" content="/favicon-144.png">
-		<meta name="msapplication-config" content="/browserconfig.xml">
+		<meta name="msapplication-TileImage" content="img/favicon/favicon-144.png">
+		<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
 		<!-- ****** faviconit.com favicons ****** -->
 
     <title>SINCE LAST</title>
@@ -131,7 +131,7 @@ if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00' or
 					<a class="portfolio-item d-block mx-auto" href="#portfolio-modal-<?php echo $counter; ?>">
 					  <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
 						<div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-						  <i class="fa fa-search-plus fa-3x"></i>
+						  <i class="fa fa-expand fa-3x"></i>
 						</div>
 					  </div>
 					  <img class="img-fluid" src="<?php echo $row['Image'] ?>" alt=""><center><?php echo $row['Description']; ?></center>
