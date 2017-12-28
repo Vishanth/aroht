@@ -39,6 +39,29 @@ if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00' or
     <meta name="description" content="">
     <meta name="author" content="">
 
+		<!-- ****** faviconit.com favicons ****** -->
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="icon" sizes="16x16 32x32 64x64" href="img/favicon/favicon.ico">
+		<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
+		<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+		<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+		<link rel="apple-touch-icon" href="/favicon-57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+		<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="/favicon-144.png">
+		<meta name="msapplication-config" content="/browserconfig.xml">
+		<!-- ****** faviconit.com favicons ****** -->
+
     <title>SINCE LAST</title>
 
     <!-- Bootstrap core CSS -->
@@ -66,7 +89,7 @@ if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00' or
   </head>
 
   <body id="page-top">
-  
+
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0];
@@ -99,8 +122,8 @@ if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00' or
         <h2 class="text-center text-uppercase text-secondary mb-0">MAJOR EVENTS SINCE</h2>
         <hr class="star-dark mb-5">
         <div class="row">
-		
-		<?php 
+
+		<?php
 			if($rows!=null){
 				$counter = 1;
 				foreach($rows as $row){?>
@@ -114,7 +137,7 @@ if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00' or
 					  <img class="img-fluid" src="<?php echo $row['Image'] ?>" alt=""><center><?php echo $row['Description']; ?></center>
 					</a>
 				</div>
-		<?php $counter++;} 
+		<?php $counter++;}
 			}?>
         </div>
       </div>
@@ -142,8 +165,8 @@ if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00' or
     <!-- Portfolio Modals -->
 
     <!-- Portfolio Modal 1 -->
-	
-	<?php 
+
+	<?php
 			if($rows!=null){
 				$counter = 1;
 				foreach($rows as $row){?>
@@ -167,7 +190,7 @@ if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00' or
 						</div>
 					  </div>
 					</div>
-		<?php $counter++;} 
+		<?php $counter++;}
 			}?>
 
     <!-- Bootstrap core JavaScript -->
