@@ -7,7 +7,7 @@ $pass = '';
 $db = 'timesince';
 $db = new mysqli('localhost',$user, $pass, $db) or die("Unable to connect to DB");
 
-if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00' limit 12")){
+if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00' order by date limit 12")){
 	$rows = array();
 	if($result->num_rows){
 		while ($row = $result->fetch_assoc())
