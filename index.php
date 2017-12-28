@@ -35,9 +35,9 @@ if($result = $db->query("SELECT * FROM since where date>'2007-03-11 18:00:00' or
 
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="title" content="Time Since Thora won battle of the blues">
+    <meta name="description" content="Time-Since provides a view on major world events since Thora last won the battle of the blues">
+    <meta name="keywords" content="time, since, timesince, sincetime, thora, royal, thomas, battle, blues, battle of the blues, 139, 138">
 
 		<!-- ****** faviconit.com favicons ****** -->
 		<link rel="shortcut icon" href="img/favicon/favicon.ico">
